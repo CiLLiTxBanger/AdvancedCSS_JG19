@@ -4,7 +4,7 @@ This project was made to hopefully achieve a good grade for the course Advanced 
 
 In order to maintain quality code, we use a github repo: [GitHub](https://github.com/CiLLiTxBanger/AdvancedCSS_JG19)
 
-Collaborators are: Johannes Eder, Jonas Mautner, Manuel Strobl
+Collaborators are: Johannes Eder, Jonas Mautner, Manuel Strobel
 
 Note: This file should be updated before we submit the project.
 
