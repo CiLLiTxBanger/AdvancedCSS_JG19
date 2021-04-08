@@ -7,6 +7,7 @@ In order to maintain quality code, we use a github repo: [GitHub](https://github
 Collaborators are: Johannes Eder, Jonas Mautner, Manuel Strobel
 
 Note: This file should be updated before we submit the project.
+Test
 
 
 ## Git Tutorial
