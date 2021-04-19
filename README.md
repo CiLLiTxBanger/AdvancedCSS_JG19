@@ -38,7 +38,7 @@ git commit -m "My commit message"
 # files pushen
 git push 
 ~~~
-###Anleitung
+##Anleitung
 1. In PHPStorms ein neues Projekt anlegen.
 2. Hier das Terminal öffnen und das Projekt klonen
 3. Änderungen machen PiPaPo
