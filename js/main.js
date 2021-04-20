@@ -1,9 +1,15 @@
 function showForm(){
-    console.log("hi");
-    document.getElementById("pop-up").classList.remove("invisible");
+    document.getElementById("pop-up-contact").classList.remove("invisible");
 }
 
 function closeForm(){
-    console.log("hi");
-    document.getElementById("pop-up").classList.add("invisible");
+    document.getElementById("pop-up-contact").classList.add("invisible");
+}
+
+function showInquiry(){
+    document.getElementById("pop-up-anfrage").classList.remove("invisible");
+}
+
+function closeInquiry(){
+    document.getElementById("pop-up-anfrage").classList.add("invisible");
 }

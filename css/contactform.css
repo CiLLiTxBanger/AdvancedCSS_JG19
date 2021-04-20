@@ -20,6 +20,11 @@
     margin: 15px;
 }
 
+.contact-form .form-floating-kurs{
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
 .contact-form textarea{
     min-height: 20vh;
 }
@@ -45,4 +50,24 @@
 .close-button-form i{
     cursor: pointer;
     margin-right: 15px;
+}
+
+.contactData{
+    border-radius: 10px;
+    padding: 40px;
+    width: content-box;
+    margin: 0 auto;
+    box-shadow: inset var(--orange-dark) 0 0 60px;
+}
+
+.contactData .contactBtn{
+    margin-top: 20px;
+}
+
+.img-and-name{
+    text-align: center;
+}
+
+.img-and-name > div{
+    margin-top: 10px;
 }

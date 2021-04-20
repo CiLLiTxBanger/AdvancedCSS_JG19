@@ -217,72 +217,128 @@
     <!-- Idee: fullwidth map. auf scroll runter kommt der kontaktbereich darüber -->
     <section id="contact">
         <!-- Folgendes div soll Schwebe-Effekt haben-->
-        <div>
-            <div>
-                <div>
+
+        <div class="contactData">
+            <div class="row g-2">
+                <div class="col-4">
+                    <div class="img-and-name">
                     <!-- Bild, Name und Position von Ansprechperson -->
-                    <img src="https://picsum.photos/150" alt="Lachender Campleiter">
+                    <img class="img-fluid rounded-circle w-70 mb-4 mb-lg-0" src="https://picsum.photos/150" alt="Lachender Campleiter">
                     <div>
-                        <p><span>Johannes Eder</span><br/>Campleiter</p>
+                        <p><b>Johannes Eder</b><br/>Campleiter</p>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h2>Shaka</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                            optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+                </div>
+                    <div class="col-8">
+                        <div>
+                        <h2>Kontakt</h2>
+                        <p>Kontaktiere uns via Telefon, E-Mail, Social Media oder das direkte Kontaktformular.</p>
                     </div>
-                    <div>
-                        Anschrift
-                        Telefonnummer
-                        EMail
+                    <div class="row g-2">
+                        <div class="col-md">
+                        <b>Anschrift:</b> <br/>
+                        Seestraße 69 <br/>
+                        1234 Bielefeld <br/>
+                        </div>
+                        <div class="col-md">
+                        <b>Tel.:</b> 0946 6252455 <br/>
+                        <b>E-Mail:</b> info@surfcamp.de
+                            <div>
+                                <a href="#" class="bi bi-facebook"></a>
+                                <a href="#" class="bi bi-instagram"></a>
+                                <a href="#" class="bi bi-twitter"></a>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        Social Media Icon 1
-                        Social Media Icon 2
-                        Social Media Icon 3
-                    </div>
+                        <div class="contactBtn">
+                        <button onclick="showForm()" class="btn">
+                            <!-- Button öffnet Kontaktformular -->
+                            Kontaktformular
+                        </button>
+                        </div>
                 </div>
             </div>
-            <button onclick="showForm()">
-                <!-- Button öffnet Kontaktformular -->
-                Nimm Kontakt mit uns auf!
-            </button>
         </div>
+
     </section>
 
-    <!-- Kontaktformular öffnet sich als Pop-Up -->
-    <div class="invisible" id="pop-up">
-        <div class="blurry-back"></div>
-        <div class="contact-form">
-            <form>
-                <div class="row g-2">
-                    <div class="close-button-form" onclick="closeForm()"><i class="bi bi-x-circle"></i></div>
-                    <div class="col-md">
-                        <div class="form-floating">
-                            <input type="email" id="floatingMail" class="form-control" placeholder="Deine E-Mail Adresse">
-                            <label for="floatingMail">Deine E-Mail Adresse</label>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="form-floating">
-                            <input type="text" id="floatingName" class="form-control" placeholder="Dein Name">
-                            <label for="floatingMail">Dein Name</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-floating">
-                    <textarea id="floatingText" class="form-control" placeholder="Deine Nachricht"></textarea>
-                    <label for="floatingText">Deine Nachricht</label>
-                </div>
-                <div class="form-button">
-                    <input class="btn btn-outline-primary" type="submit" value="Submit">
-                </div>
-            </form>
+  <!-- Kontaktformular öffnet sich als Pop-Up -->
+  <div class="invisible" id="pop-up-contact">
+  <div class="blurry-back"></div>
+  <div class="contact-form">
+    <form>
+      <div class="row g-2">
+        <div class="close-button-form" onclick="closeForm()"><i class="bi bi-x-circle"></i></div>
+        <div class="col-md">
+      <div class="form-floating">
+        <input type="email" id="floatingMail" class="form-control" placeholder="Deine E-Mail Adresse">
+         <label for="floatingMail">Deine E-Mail Adresse</label>
+      </div>
         </div>
-    </div>
+        <div class="col-md">
+      <div class="form-floating">
+        <input type="text" id="floatingName" class="form-control" placeholder="Dein Name">
+        <label for="floatingMail">Dein Name</label>
+      </div>
+        </div>
+      </div>
+      <div class="form-floating">
+        <textarea id="floatingText" class="form-control" placeholder="Deine Nachricht"></textarea>
+        <label for="floatingText">Deine Nachricht</label>
+      </div>
+      <div class="form-button">
+      <input class="btn btn-outline-primary" type="submit" value="Abschicken">
+      </div>
+    </form>
+  </div>
+  </div>
+
+    <!-- Anfrageformular öffnet sich als Pop-Up -->
+  <div class="invisible" id="pop-up-anfrage">
+  <div class="blurry-back"></div>
+  <div class="contact-form">
+    <form>
+      <div class="row g-2">
+        <div class="close-button-form" onclick="closeInquiry()"><i class="bi bi-x-circle"></i></div>
+        <div class="col-8">
+            <div class="form-floating">
+                <input type="text" id="floatingName" class="form-control" placeholder="Dein Vorname">
+                <label for="floatingMail">Dein Vorname</label>
+            </div>
+            <div class="form-floating">
+                <input type="text" id="floatingName" class="form-control" placeholder="Dein Nachname">
+                <label for="floatingMail">Dein Nachname</label>
+            </div>
+            <div class="form-floating">
+                <input type="email" id="floatingMail" class="form-control" placeholder="Deine E-Mail Adresse">
+                <label for="floatingMail">Deine E-Mail Adresse</label>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-floating-kurs">
+            <select class="form-select" aria-label="Kursauswahl Dropdown">
+                <option selected>Bitte Kurs wählen</option>
+                <option value="1">Kanufahren</option>
+                <option value="2">Standup-Paddeling</option>
+                <option value="3">Windsurfen</option>
+            </select>
+            </div>
+            <div class="form-floating-kurs">
+                <label for="datumWahl">Wunschtermin</label>
+                <input class="form-control" type="datetime-local" id="datumWahl">
+            </div>
+            <div class="form-floating-kurs">
+                <label for="personenAnzahl">Personenanzahl</label>
+                <input type="number" class="form-control" id="personenAnzahl" min="1" max="6">
+            </div>
+        </div>
+      </div>
+      <div class="form-button">
+      <input class="btn btn-outline-primary" type="submit" value="Anfrage abschicken">
+      </div>
+    </form>
+  </div>
+  </div>
 </main>
 
 <footer class="footer">
@@ -292,17 +348,6 @@
         <span>Seestraße 69</span>
     </div>
     <div class="footer--formular">
-        <!-- Kontaktformular öffnet sich als Pop-Up
-        <h4>Kontaktformular:</h4>
-        <form action="#">
-          <label for="email">E-Mail</label>
-          <input type="email" id="email" name="email" placeholder="Deine Mailadresse">
-          <label for="fname">Vorname</label>
-          <input type="text" id="fname" name="firstname" placeholder="Dein Vorname">
-          <label for="subject">Nachricht</label>
-          <textarea id="subject" name="subject" placeholder="Deine Nachricht"></textarea>
-          <input type="submit" value="Nimm Kontakt mit uns auf!">
-        </form>-->
     </div>
     <div class="footer--links">
         <div class="footer--links__rechtliches">
