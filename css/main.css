@@ -16,6 +16,10 @@
     --orange: #ffc468;
 }
 
+section {
+    margin: 5em 0;
+}
+
 *[class^='bi'] {
     /* todo here comes some general style for bootstrap icons */
 }
