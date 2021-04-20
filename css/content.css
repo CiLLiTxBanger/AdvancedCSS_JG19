@@ -4,6 +4,7 @@
 .team {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 10px 0 40px 0;
 }

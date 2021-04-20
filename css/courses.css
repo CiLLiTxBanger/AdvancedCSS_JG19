@@ -1,5 +1,17 @@
-.courses {
+.card-footer{
+    background: var(--blue);
+    color: white;
+    font-size: 120%;
+}
 
+.courses {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses * p {
+    font-size: 90%;
+    margin: 1em 0em;
 }
 
 .courses--images {
@@ -19,16 +31,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.courses--btn:focus:before,
-.courses--btn:hover:before {
-    opacity: 0.5;
-}
-
-.courses--btn:before {
-    content: '';
-    background: gray;
-    opacity: 0;
-    transition: opacity .5s ease-in-out;
 }
