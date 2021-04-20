@@ -55,3 +55,8 @@ header {
         display: none;
     }
 }
+
+.header--navbar .header--navbar__container * .header--navbar__link:hover { /* höhere Spezifität */
+    color: var(--blue-dark);
+    transition: color .3s ease-in;
+}
