@@ -1,5 +1,11 @@
 .team--img {
+    background-image: url('../assets/images/Team2.jpg');
     width: 100%;
+    height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .team {
     display: flex;
@@ -38,4 +44,15 @@
     -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
     box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
     */box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.team--text__float {
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    width: 85%;
+    position: relative;
+    top: -50px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
 }
