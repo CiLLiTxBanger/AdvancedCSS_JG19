@@ -1,0 +1,22 @@
+.team--img {
+    width: 100%;
+}
+.team--display__profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.team--display {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    padding: 15px;
+
+}
+.team--display__sports {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: left;
+}
