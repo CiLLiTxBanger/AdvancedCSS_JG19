@@ -18,11 +18,11 @@
     --orange: #ffbc57;
     --orange-dark: #a7844d;
     --blue: #0053ba;
-    --blue-dark: #2386b4;
+    --blue-dark: #04397d;
 }
 
 html, body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Abel', 'Lato', sans-serif; !important;
     font-size: 1.1em;
 }
 
@@ -39,5 +39,9 @@ section {
 .btn:hover {
     background: var(--orange-dark);
     border-color: var(--orange-dark);
+}
+
+* [type="submit"] {
+    color: initial;
 }
 
