@@ -15,8 +15,10 @@
 /* GENERAL STYLE */
 
 :root {
-    --orange: #ffc468;
+    --orange: #ffbc57;
     --orange-dark: #a7844d;
+    --blue: #0053ba;
+    --blue-dark: #2386b4;
 }
 
 section {
