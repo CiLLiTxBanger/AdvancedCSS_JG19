@@ -1,0 +1,15 @@
+.footer {
+    background-color: #5a5a5a;
+    color: azure;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.footer--links {
+    display: flex;
+}
+.footer--links__socials a{
+    text-decoration: none;
+    color: azure;
+}
