@@ -8,6 +8,7 @@
 @import url("header.css");
 @import url("contactform.css");
 @import url("footer.css");
+@import url("content.css");
 
 
 /* GENERAL STYLE */
@@ -29,8 +30,14 @@ section {
     /* todo focus and hover style for bootstrap icons */
 }
 
+section {
+    margin: 50px;
+}
+
 /* FONTS */
 html, body {
     font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
 }
 

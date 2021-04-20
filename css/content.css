@@ -1,0 +1,40 @@
+.team--img {
+    width: 100%;
+}
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 0 40px 0;
+}
+.team--display__profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.team--display {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    padding: 15px;
+}
+.team--display a {
+    color: black;
+    text-decoration: underline;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: left;
+}
+.team--display__sports {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: left;
+}
+.team--display {
+    /*more colorful shadows
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    */box-shadow: 10px 10px 5px #aaaaaa;
+}
