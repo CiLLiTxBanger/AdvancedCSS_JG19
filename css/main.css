@@ -9,17 +9,35 @@
 @import url("contactform.css");
 @import url("footer.css");
 @import url("content.css");
+@import url("courses.css");
 
 
 /* GENERAL STYLE */
 
 :root {
     --orange: #ffc468;
+    --orange-dark: #a7844d;
 }
 
 section {
     margin: 5em 0;
 }
+
+.btn {
+    background: var(--orange);
+    border-color: var(--orange);
+}
+
+.btn:focus,
+.btn:hover {
+    background: var(--orange-dark);
+    border-color: var(--orange-dark);
+}
+
+
+
+
+
 
 *[class^='bi'] {
     /* todo here comes some general style for bootstrap icons */

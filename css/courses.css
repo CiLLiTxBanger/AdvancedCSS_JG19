@@ -1,0 +1,34 @@
+.courses {
+
+}
+
+.courses--images {
+    transition: width .3s ease-in-out;;
+
+}
+.courses--images:focus,
+.courses--images:hover {
+    width: 110%;
+}
+
+.courses--container{
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses--btn:focus:before,
+.courses--btn:hover:before {
+    opacity: 0.5;
+}
+
+.courses--btn:before {
+    content: '';
+    background: gray;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
