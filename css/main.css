@@ -15,8 +15,15 @@
 /* GENERAL STYLE */
 
 :root {
-    --orange: #ffc468;
+    --orange: #ffbc57;
     --orange-dark: #a7844d;
+    --blue: #0053ba;
+    --blue-dark: #2386b4;
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
 }
 
 section {
@@ -32,30 +39,5 @@ section {
 .btn:hover {
     background: var(--orange-dark);
     border-color: var(--orange-dark);
-}
-
-
-
-
-
-
-*[class^='bi'] {
-    /* todo here comes some general style for bootstrap icons */
-}
-
-*[class^='bi']:hover,
-*[class^='bi']:focus {
-    /* todo focus and hover style for bootstrap icons */
-}
-
-section {
-    margin: 50px;
-}
-
-/* FONTS */
-html, body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.1em;
-    text-align: justify;
 }
 
