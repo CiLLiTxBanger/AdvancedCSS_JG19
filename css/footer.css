@@ -8,6 +8,7 @@
 
 .footer--links {
     display: flex;
+    flex-direction: column;
 }
 .footer--links__socials a{
     text-decoration: none;
