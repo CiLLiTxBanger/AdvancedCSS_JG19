@@ -2,7 +2,8 @@
     background-color: #5a5a5a;
     color: azure;
     display: flex;
-    padding: 25px;
+    padding: 45px;
+    margin-top: 40px;
     justify-content: space-between;
 }
 
