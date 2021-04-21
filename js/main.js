@@ -15,6 +15,7 @@ function closeInquiry(){
 }
 
 /* DARK MODE */
+let count = 0;
 function darkmode(){
     let body = document.body;
     body.classList.toggle("darkmode--general");
@@ -39,16 +40,33 @@ function darkmode(){
     let contactData = document.getElementById("contactData--dark");
     contactData.classList.toggle("darkmode--contactData");
 
-    let btnPrimary = document.getElementsByClassName("btn-primary");
-    for (let i = 0; i < btnPrimary.length; i++)
-    {
-        btnPrimary[i].style.color = "#212529";
+    if (count == 0){
+        let btnPrimary = document.getElementsByClassName("btn-primary");
+        for (let i = 0; i < btnPrimary.length; i++)
+        {
+            btnPrimary[i].style.color = "#212529";
+        }
+
+        let links = document.querySelectorAll(".team--display a");
+        for (let i = 0; i < links.length; i++)
+        {
+            links[i].style.color = "white";
+        }
+        count++;
+    } else {
+        let btnPrimary = document.getElementsByClassName("btn-primary");
+        for (let i = 0; i < btnPrimary.length; i++)
+        {
+            btnPrimary[i].style.color = "white";
+        }
+
+        let links = document.querySelectorAll(".team--display a");
+        for (let i = 0; i < links.length; i++)
+        {
+            links[i].style.color = "black";
+        }
+        count--;
     }
 
-    let links = document.querySelectorAll(".team--display a");
-    for (let i = 0; i < links.length; i++)
-    {
-        links[i].style.color = "white";
-    }
 
 }
