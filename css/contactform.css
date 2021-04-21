@@ -72,3 +72,10 @@
 .img-and-name > div{
     margin-top: 10px;
 }
+
+@media all and (max-width: 1200px) {
+    .contactData .col-4, .contactData .col-8{
+        width: 100%;
+        text-align: center;
+    }
+}

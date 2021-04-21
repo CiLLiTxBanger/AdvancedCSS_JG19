@@ -56,3 +56,9 @@
     padding: 20px;
     border: 1px solid black;
 }
+
+@media all and (max-width: 1200px){
+    #about {
+        text-align: center;
+    }
+}
