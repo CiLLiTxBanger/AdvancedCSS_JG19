@@ -34,14 +34,3 @@ footer .bi {
 .footer--links__privacy a:hover{
     color: var(--lightgrey);
 }
-
-@media all and (max-width: 1200px){
-    .footer--container {
-        display: flex;
-        flex-direction: column;
-    }
-    .footer--map {
-        width: 100%;
-        margin-bottom: 2em;
-    }
-}

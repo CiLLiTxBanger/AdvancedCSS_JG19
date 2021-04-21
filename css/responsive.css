@@ -1,0 +1,102 @@
+@media all and (max-width: 1200px) {
+    /*-----------------------------------------------CONTACTFORM*/
+    .contact--data .col-4, .contact--data .col-8 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    #pop-up-anfrage .contact-form {
+        margin-top: 25px;
+    }
+
+    #pop-up-anfrage .form-button {
+        margin-top: 10px;
+    }
+
+    #pop-up-anfrage .contact-form .col-8,
+    #pop-up-anfrage .contact-form .col-4 {
+        width: 100%;
+    }
+
+    .form-floating-kurs {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    /*-----------------------------------------------COURSES*/
+    .row {
+        display: block;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .card-body {
+        margin-top: -60px;
+        z-index: 4;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .card {
+        margin-bottom: 40px;
+    }
+
+    .team--display {
+        margin-bottom: 15px;
+        width: 45%;
+        text-align: center;
+    }
+
+    .team--display__profil {
+        width: 100%;
+        height: auto;
+    }
+
+    .team--display > a {
+        word-break: break-all;
+    }
+
+    /*-----------------------------------------------FOOTER*/
+    footer {
+        padding-bottom: 80px;
+    }
+
+    footer .container div {
+        margin-right: 0;
+    }
+
+    .footer--container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer--map {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /*-----------------------------------------------HEADER*/
+    .header--navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: var(--orange);
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .header--hero {
+        margin-top: 60px;
+    }
+
+    /*-----------------------------------------------TEAM*/
+    #about {
+        text-align: center;
+    }
+}

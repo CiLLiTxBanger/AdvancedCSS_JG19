@@ -15,12 +15,13 @@
 .courses--images {
     transition: width .3s ease-in-out;
 }
+
 .courses--images:focus,
 .courses--images:hover {
     width: 110%;
 }
 
-.courses--image{
+.courses--image {
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -34,40 +35,4 @@
     background: var(--blue);
     color: white;
     font-size: 120%;
-}
-
-@media all and (max-width: 1200px) {
-    .row {
-        display: block;
-    }
-    h2 {
-        text-align: center;
-    }
-    .card-body{
-        margin-top: -60px;
-        z-index: 4;
-        background-color: rgba(255,255,255, 0.5);
-    }
-
-    .card{
-        margin-bottom: 40px;
-    }
-    .team--display{
-        margin-bottom: 15px;
-        width: 45%;
-        text-align: center;
-    }
-    .team--display__profil{
-        width: 100%;
-        height: auto;
-    }
-    .team--display > a{
-        word-break: break-all;
-    }
-    footer{
-        padding-bottom: 80px;
-    }
-    footer .container div{
-        margin-right: 0;
-    }
 }
