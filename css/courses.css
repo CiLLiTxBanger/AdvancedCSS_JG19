@@ -1,8 +1,6 @@
-.card-footer{
-    background: var(--blue);
-    color: white;
-    font-size: 120%;
-}
+@charset "utf-8";
+
+/* COURSE STYLING */
 
 .courses {
     display: flex;
@@ -22,7 +20,7 @@
     width: 110%;
 }
 
-.courses--container{
+.courses--image{
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -30,6 +28,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.courses--price {
+    background: var(--blue);
+    color: white;
+    font-size: 120%;
 }
 
 @media all and (max-width: 1200px) {
