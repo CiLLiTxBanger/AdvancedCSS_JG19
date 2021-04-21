@@ -60,3 +60,25 @@ header {
     color: var(--blue-dark);
     transition: color .3s ease-in;
 }
+
+/*Darkmode-Anpassung in der Nav-Leiste*/
+
+.right-side-nav{
+    text-align: right;
+}
+
+/*Nav-Mobil*/
+@media all and (max-width: 1200px) {
+    .header--navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: var(--orange);
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .header--hero{
+        margin-top: 60px;
+    }
+}
