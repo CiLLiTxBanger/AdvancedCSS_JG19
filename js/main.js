@@ -38,4 +38,17 @@ function darkmode(){
 
     let contactData = document.getElementById("contactData--dark");
     contactData.classList.toggle("darkmode--contactData");
+
+    let btnPrimary = document.getElementsByClassName("btn-primary");
+    for (let i = 0; i < btnPrimary.length; i++)
+    {
+        btnPrimary[i].style.color = "#212529";
+    }
+
+    let links = document.querySelectorAll(".team--display a");
+    for (let i = 0; i < links.length; i++)
+    {
+        links[i].style.color = "white";
+    }
+
 }
