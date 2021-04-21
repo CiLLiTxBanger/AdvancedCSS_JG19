@@ -8,7 +8,7 @@
 @import url("header.css");
 @import url("contactform.css");
 @import url("footer.css");
-@import url("content.css");
+@import url("team.css");
 @import url("courses.css");
 
 
@@ -19,7 +19,8 @@
     --orange-dark: #a7844d;
     --blue: #0053ba;
     --blue-dark: #04397d;
-    --dark: #363636;
+    --darkgrey: #363636;
+    --lightgrey: #aaa;
 }
 
 html, body {
@@ -97,11 +98,11 @@ section {
 }
 
 .darkmode--general {
-    background-color: var(--dark);
+    background-color: var(--darkgrey);
     color: white;
 }
 .darkmode--card {
-    background-color: var(--dark);
+    background-color: var(--darkgrey);
     border: 2px solid rgba(215, 215, 215, 0.12);
 }
 

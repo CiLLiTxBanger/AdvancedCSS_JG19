@@ -37,7 +37,7 @@ function darkmode(){
         member[i].classList.toggle("darkmode--shadow");
     }
 
-    let contactData = document.getElementById("contactData--dark");
+    let contactData = document.getElementById("contact--data__dark");
     contactData.classList.toggle("darkmode--contactData");
 
     if (count == 0){

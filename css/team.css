@@ -1,3 +1,12 @@
+
+.team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 0 40px 0;
+}
+
 .team--img {
     background-image: url('../assets/images/Team2.jpg');
     width: 100%;
@@ -7,13 +16,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.team {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 10px 0 40px 0;
-}
+
 .team--display__profil {
     width: 150px;
     height: 150px;
@@ -26,6 +29,7 @@
 .team--display__profil:hover {
     transform: scale(1.1);
 }
+
 .team--display {
     width: 200px;
     display: flex;
@@ -33,6 +37,7 @@
     border: solid black 1px;
     padding: 15px;
 }
+
 .team--display a {
     color: black;
     text-decoration: underline;
@@ -40,21 +45,23 @@
     font-style: italic;
     text-align: left;
 }
+
 .team--display__sports {
     font-size: 0.8em;
     font-style: italic;
     text-align: left;
 }
+
 .team--display {
     /*more colorful shadows
     -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
-    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
-    */box-shadow: 10px 10px 5px #aaaaaa;
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);*/
+    box-shadow: 10px 10px 5px var(--lightgrey);
 }
 
 .team--text__float {
     background-color: white;
-    box-shadow: 10px 10px 5px #aaaaaa;
+    box-shadow: 10px 10px 5px var(--lightgrey);
     width: 85%;
     position: relative;
     top: -50px;

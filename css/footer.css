@@ -11,12 +11,12 @@ footer .bi {
     font-size: 2rem;
 }
 
-footer .container {
+.footer--container {
     display: flex;
     justify-content: flex-start;
 }
 
-footer .container div{
+.footer--container > *{
     margin-right: 2em;
 }
 
@@ -32,16 +32,15 @@ footer .container div{
 }
 .footer--links__socials a:hover,
 .footer--links__privacy a:hover{
-    color: #c1c1c1;
+    color: var(--lightgrey);
 }
 
 @media all and (max-width: 1200px){
-    footer .container {
+    .footer--container {
         display: flex;
         flex-direction: column;
     }
-
-    footer iframe {
+    .footer--map {
         width: 100%;
         margin-bottom: 2em;
     }
