@@ -11,12 +11,11 @@
 
 .courses * p {
     font-size: 90%;
-    margin: 1em 0em;
+    margin: 1em 0;
 }
 
 .courses--images {
-    transition: width .3s ease-in-out;;
-
+    transition: width .3s ease-in-out;
 }
 .courses--images:focus,
 .courses--images:hover {

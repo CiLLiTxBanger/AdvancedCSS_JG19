@@ -49,6 +49,7 @@
                         <a class="header--navbar__link nav-link" href="#contact">Kontakt</a>
                     </li>
                 </ul>
+                <button onclick="darkmode()" id="darkmode--button"><i class="bi bi-tsunami"></i></button>
             </div>
         </div>
     </nav>
@@ -62,7 +63,7 @@
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <img class="hero--logo" src="assets/images/Logo_Summer-Camp.png" width="150">
+                    <img class="hero--logo" src="assets/images/Logo_Summer-Camp.png" width="150" alt="Logo">
                     <h1 class="display-3">Summer Camp 2021</h1>
                     <p class="lead mb-0">Für einen unvergesslichen Sommer!</p>
                 </div>
@@ -83,8 +84,10 @@
             </div>
             <div class="col-lg-5">
                 <h1 class="font-weight-light">Hey Summer Camper!</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing et. Commodi cum, cumque cupiditate dignissimos dolor
-                    eius eos facere fuga ipsa, iste iure iusto maiores numquam possimus ratione, reiciendis reprehenderit ut
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing et. Commodi cum, cumque cupiditate dignissimos
+                    dolor
+                    eius eos facere fuga ipsa, iste iure iusto maiores numquam possimus ratione, reiciendis
+                    reprehenderit ut
                     voluptas?</p>
                 <a class="btn btn-primary" href="#contact">Kontaktiere uns!</a>
             </div>
@@ -122,7 +125,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Standup-Paddeling</h4>
                         <p class="card-text">Ein Spaß zum Ausprobieren für Jung und Alt. Ein guter Gleichgewichtssinn
-                        kann allerdings nicht schaden.</p>
+                            kann allerdings nicht schaden.</p>
                     </div>
                     <div class="card-footer">
                         <span class="courses--price">ab 30€</span>
@@ -139,7 +142,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Windsurfen</h4>
                         <p class="card-text">Das Erlebnis für alle professionellen Wassersportler unter euch. Aber
-                        auch für Neueinsteiger zum Ausprobieren.</p>
+                            auch für Neueinsteiger zum Ausprobieren.</p>
                     </div>
                     <div class="card-footer">
                         <span class="courses--price">ab 60€</span>
@@ -150,7 +153,8 @@
         </div>
         <div class="row text-center">
             <div>
-                <a class="courses--btn btn btn-primary col" onclick="showInquiry()">Jetzt hier für einen der Kurse anfragen!</a>
+                <a class="courses--btn btn btn-primary col" onclick="showInquiry()">Jetzt hier für einen der Kurse
+                    anfragen!</a>
             </div>
         </div>
 
@@ -160,7 +164,7 @@
     <section id="team">
         <h2>Unser Team</h2>
         <div class="team--img"></div>
-        <div class="team--text__float">
+        <div class="team--text__float" id="team--text__dark">
             <p class="team--text__text">Unter der Leitung von Tennis-Legende <i>Fixi Hartmann</i> gibt es das Feriencamp
                 nun bereits schon seit 7 Jahren.
                 Das Team besteht aus 20 freiwilligen Helfern, die einfach aus der Laune heraus beschlossen haben
@@ -220,31 +224,32 @@
     <section id="contact">
         <!-- Folgendes div soll Schwebe-Effekt haben-->
 
-        <div class="contactData">
+        <div class="contactData" id="contactData--dark">
             <div class="row g-2">
                 <div class="col-4">
                     <div class="img-and-name">
-                    <!-- Bild, Name und Position von Ansprechperson -->
-                    <img class="img-fluid rounded-circle w-70 mb-4 mb-lg-0" src="https://picsum.photos/150" alt="Lachender Campleiter">
-                    <div>
-                        <p><b>Johannes Eder</b><br/>Campleiter</p>
+                        <!-- Bild, Name und Position von Ansprechperson -->
+                        <img class="img-fluid rounded-circle w-50 mb-4 mb-lg-0" src="assets/images/Fixi.jpg"
+                             alt="Lachender Campleiter">
+                        <div>
+                            <p><b>Fixi Hartmann</b><br/>Campleiterin</p>
+                        </div>
                     </div>
                 </div>
-                </div>
-                    <div class="col-8">
-                        <div>
+                <div class="col-8">
+                    <div>
                         <h2>Kontakt</h2>
                         <p>Kontaktiere uns via Telefon, E-Mail, Social Media oder das direkte Kontaktformular.</p>
                     </div>
                     <div class="row g-2">
                         <div class="col-md">
-                        <b>Anschrift:</b> <br/>
-                        Seestraße 69 <br/>
-                        1234 Bielefeld <br/>
+                            <b>Anschrift:</b> <br/>
+                            Seestraße 69 <br/>
+                            1234 Bielefeld <br/>
                         </div>
                         <div class="col-md">
-                        <b>Tel.:</b> 0946 6252455 <br/>
-                        <b>E-Mail:</b> info@surfcamp.de
+                            <b>Tel.:</b> 0946 6252455 <br/>
+                            <b>E-Mail:</b> fixi.hartmann@example.org
                             <div>
                                 <a href="#" class="bi bi-facebook"></a>
                                 <a href="#" class="bi bi-instagram"></a>
@@ -252,119 +257,123 @@
                             </div>
                         </div>
                     </div>
-                        <div class="contactBtn">
+                    <div class="contactBtn">
                         <button onclick="showForm()" class="btn">
                             <!-- Button öffnet Kontaktformular -->
                             Kontaktformular
                         </button>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-  <!-- Kontaktformular öffnet sich als Pop-Up -->
-  <div class="invisible" id="pop-up-contact">
-  <div class="blurry-back"></div>
-  <div class="contact-form rounded">
-    <form>
-      <div class="row g-2">
-        <div class="close-button-form" onclick="closeForm()"><i class="bi bi-x-circle"></i></div>
-        <div class="col-md">
-      <div class="form-floating">
-        <input type="email" id="floatingMail" class="form-control" placeholder="Deine E-Mail Adresse">
-         <label for="floatingMail">Deine E-Mail Adresse</label>
-      </div>
+    <!-- Kontaktformular öffnet sich als Pop-Up -->
+    <div class="invisible" id="pop-up-contact">
+        <div class="blurry-back"></div>
+        <div class="contact-form rounded">
+            <form>
+                <div class="row g-2">
+                    <div class="close-button-form" onclick="closeForm()"><i class="bi bi-x-circle"></i></div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="email" id="floatingMail" class="form-control"
+                                   placeholder="Deine E-Mail Adresse">
+                            <label for="floatingMail">Deine E-Mail Adresse</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="text" id="floatingName" class="form-control" placeholder="Dein Name">
+                            <label for="floatingName">Dein Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <textarea id="floatingText" class="form-control" placeholder="Deine Nachricht"></textarea>
+                    <label for="floatingText">Deine Nachricht</label>
+                </div>
+                <div class="form-button">
+                    <input class="btn btn-outline-primary" type="submit" value="Abschicken">
+                </div>
+            </form>
         </div>
-        <div class="col-md">
-      <div class="form-floating">
-        <input type="text" id="floatingName" class="form-control" placeholder="Dein Name">
-        <label for="floatingName">Dein Name</label>
-      </div>
-        </div>
-      </div>
-      <div class="form-floating">
-        <textarea id="floatingText" class="form-control" placeholder="Deine Nachricht"></textarea>
-        <label for="floatingText">Deine Nachricht</label>
-      </div>
-      <div class="form-button">
-      <input class="btn btn-outline-primary" type="submit" value="Abschicken">
-      </div>
-    </form>
-  </div>
-  </div>
+    </div>
 
     <!-- Anfrageformular öffnet sich als Pop-Up -->
-  <div class="invisible" id="pop-up-anfrage">
-  <div class="blurry-back"></div>
-  <div class="contact-form rounded">
-    <form>
-      <div class="row g-2">
-        <div class="close-button-form" onclick="closeInquiry()"><i class="bi bi-x-circle"></i></div>
-        <div class="col-8">
-            <div class="form-floating">
-                <input type="text" id="floatingVName" class="form-control" placeholder="Dein Vorname">
-                <label for="floatingVName">Dein Vorname</label>
-            </div>
-            <div class="form-floating">
-                <input type="text" id="floatingNName" class="form-control" placeholder="Dein Nachname">
-                <label for="floatingNName">Dein Nachname</label>
-            </div>
-            <div class="form-floating">
-                <input type="email" id="floatingMailK" class="form-control" placeholder="Deine E-Mail Adresse">
-                <label for="floatingMailK">Deine E-Mail Adresse</label>
-            </div>
+    <div class="invisible" id="pop-up-anfrage">
+        <div class="blurry-back"></div>
+        <div class="contact-form rounded">
+            <form>
+                <div class="row g-2">
+                    <div class="close-button-form" onclick="closeInquiry()"><i class="bi bi-x-circle"></i></div>
+                    <div class="col-8">
+                        <div class="form-floating">
+                            <input type="text" id="floatingVName" class="form-control" placeholder="Dein Vorname">
+                            <label for="floatingVName">Dein Vorname</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" id="floatingNName" class="form-control" placeholder="Dein Nachname">
+                            <label for="floatingNName">Dein Nachname</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" id="floatingMailK" class="form-control"
+                                   placeholder="Deine E-Mail Adresse">
+                            <label for="floatingMailK">Deine E-Mail Adresse</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating-kurs">
+                            <select class="form-select" aria-label="Kursauswahl Dropdown">
+                                <option selected>Bitte Kurs wählen</option>
+                                <option value="1">Kanufahren</option>
+                                <option value="2">Standup-Paddeling</option>
+                                <option value="3">Windsurfen</option>
+                            </select>
+                        </div>
+                        <div class="form-floating-kurs">
+                            <label for="datumWahl">Wunschtermin</label>
+                            <input class="form-control" type="datetime-local" id="datumWahl">
+                        </div>
+                        <div class="form-floating-kurs">
+                            <label for="personenAnzahl">Personenanzahl</label>
+                            <input type="number" class="form-control" id="personenAnzahl" min="1" max="6">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-button">
+                    <input class="btn btn-outline-primary" type="submit" value="Anfrage abschicken">
+                </div>
+            </form>
         </div>
-        <div class="col-4">
-            <div class="form-floating-kurs">
-            <select class="form-select" aria-label="Kursauswahl Dropdown">
-                <option selected>Bitte Kurs wählen</option>
-                <option value="1">Kanufahren</option>
-                <option value="2">Standup-Paddeling</option>
-                <option value="3">Windsurfen</option>
-            </select>
-            </div>
-            <div class="form-floating-kurs">
-                <label for="datumWahl">Wunschtermin</label>
-                <input class="form-control" type="datetime-local" id="datumWahl">
-            </div>
-            <div class="form-floating-kurs">
-                <label for="personenAnzahl">Personenanzahl</label>
-                <input type="number" class="form-control" id="personenAnzahl" min="1" max="6">
-            </div>
-        </div>
-      </div>
-      <div class="form-button">
-      <input class="btn btn-outline-primary" type="submit" value="Anfrage abschicken">
-      </div>
-    </form>
-  </div>
-  </div>
+    </div>
 </main>
 
 <!-- Footer -->
 <footer class="footer">
     <div class="container py-5">
-        <div><iframe class="rounded map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8223.544095746065!2d13.367653077459222!3d47.82984898478699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1bde60e4681bae96!2sAustriaCamp%20Mondsee!5e0!3m2!1sde!2sat!4v1618942333382!5m2!1sde!2sat"
-                     width="600" height="400" style="border:0;"></iframe></div>
-            <div class="footer--address">
-                <h4>Anschrift</h4>
-                <span>1234 Bielefeld</span> <br/>
-                <span>Sesamstraße 69</span>
+        <div>
+            <iframe class="rounded"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8223.544095746065!2d13.367653077459222!3d47.82984898478699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1bde60e4681bae96!2sAustriaCamp%20Mondsee!5e0!3m2!1sde!2sat!4v1618942333382!5m2!1sde!2sat"
+                    width="600" height="400" style="border:0;"></iframe>
+        </div>
+        <div class="footer--address">
+            <h4>Anschrift</h4>
+            <span>1234 Bielefeld</span> <br/>
+            <span>Sesamstraße 69</span>
+        </div>
+        <div class="footer--links">
+            <div class="footer--links__privacy">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
             </div>
-            <div class="footer--links">
-                <div class="footer--links__privacy">
-                    <a href="#">Impressum</a>
-                    <a href="#">Datenschutz</a>
-                </div>
-                <div class="footer--links__socials">
-                    <a href="https://facebook.com" target="_blank" class="bi mx-2 bi-facebook"></a>
-                    <a href="https://instagram.com" target="_blank" class="bi mx-2 bi-instagram"></a>
-                    <a href="https://twitter.com" target="_blank" class="bi mx-2 bi-twitter"></a>
-                </div>
+            <div class="footer--links__socials">
+                <a href="https://facebook.com" target="_blank" class="bi mx-2 bi-facebook"></a>
+                <a href="https://instagram.com" target="_blank" class="bi mx-2 bi-instagram"></a>
+                <a href="https://twitter.com" target="_blank" class="bi mx-2 bi-twitter"></a>
             </div>
         </div>
-    <div class="map-hover"></div>
+    </div>
 </footer>
 
 
