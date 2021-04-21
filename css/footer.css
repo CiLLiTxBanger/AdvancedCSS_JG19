@@ -30,6 +30,10 @@ footer .container div{
     text-decoration: none;
     color: white;
 }
+.footer--links__socials a:hover,
+.footer--links__privacy a:hover{
+    color: #c1c1c1;
+}
 
 @media all and (max-width: 1200px){
     footer .container {
