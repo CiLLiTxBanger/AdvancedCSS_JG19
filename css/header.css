@@ -15,18 +15,6 @@ header {
     overflow: hidden;
 }
 
-.header--hero video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    transform: translateX(-50%) translateY(-50%);
-}
-
 .header--hero .container {
     position: relative;
     z-index: 2;
@@ -43,7 +31,19 @@ header {
     z-index: 1;
 }
 
-.hero--logo {
+.header--hero__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header--hero__logo {
     padding-bottom: 2em;
 }
 
@@ -51,23 +51,22 @@ header {
     .header--hero {
         background: url('./../assets/images/Hero_Image.jpg') black no-repeat center center scroll;
     }
-    .header--hero video {
+    .header--hero__video {
         display: none;
     }
 }
 
-.header--navbar .header--navbar__container * .header--navbar__link:hover { /* höhere Spezifität */
+.header--navbar .header--navbar__container * .header--navbar__link:hover {
     color: var(--blue-dark);
     transition: color .3s ease-in;
 }
 
-/*Darkmode-Anpassung in der Nav-Leiste*/
-
-.right-side-nav{
+.header--navbar__darkmode {
     text-align: right;
 }
 
-/*Nav-Mobil*/
+/* Nav-Mobil */
+
 @media all and (max-width: 1200px) {
     .header--navbar{
         position: fixed;
