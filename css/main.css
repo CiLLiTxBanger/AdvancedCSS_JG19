@@ -49,3 +49,9 @@ section {
 * [type="submit"] {
     color: initial;
 }
+
+.scrollslider {
+    content:url(../assets/images/bob.jpg);
+    left:0;
+    width: 30px;
+}
