@@ -259,12 +259,12 @@
     </section>
 
     <!-- Kontaktformular öffnet sich als Pop-Up -->
-    <div class="invisible" id="pop-up-contact">
-        <div class="blurry-back"></div>
+    <div class="invisiblei" id="pop-up-contact">
+        <div class="blurry-back" onclick="closeForm()"></div>
         <div class="contact-form rounded">
             <form>
                 <div class="row g-2">
-                    <div class="close-button-form" onclick="closeForm()"><i class="bi bi-x-circle"></i></div>
+                    <div class="close-button-form"><span onclick="closeForm()">Schliessen <i class="bi bi-x-circle"></i></span></div>
                     <div class="col-md">
                         <div class="form-floating">
                             <input type="email" id="floatingMail" class="form-control"
@@ -292,11 +292,11 @@
 
     <!-- Anfrageformular öffnet sich als Pop-Up -->
     <div class="invisible" id="pop-up-anfrage">
-        <div class="blurry-back"></div>
+        <div class="blurry-back" onclick="closeInquiry()"></div>
         <div class="contact-form rounded">
             <form>
                 <div class="row g-2">
-                    <div class="close-button-form" onclick="closeInquiry()"><i class="bi bi-x-circle"></i></div>
+                    <div class="close-button-form"><span onclick="closeInquiry()">Schliessen <i class="bi bi-x-circle"></i></span></div>
                     <div class="col-8">
                         <div class="form-floating">
                             <input type="text" id="floatingVName" class="form-control" placeholder="Dein Vorname">
