@@ -48,9 +48,9 @@
     text-align: right;
 }
 
-.close-button-form i {
-    cursor: pointer;
+.close-button-form span {
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .contact--data {
